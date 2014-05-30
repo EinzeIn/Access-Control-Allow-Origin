@@ -1,8 +1,8 @@
 var requestListener = function(details){
 	var flag = false,
 		rule = {
-			name: "Origin",
-			value: "http://evil.com/"
+			name: "Header",
+			value: "Soapy"
 		};
 
 	for (var i = 0; i < details.requestHeaders.length; ++i) {
@@ -18,7 +18,7 @@ var requestListener = function(details){
 
 var responseListener = function(details){
 	var rule = {
-			"name": "Access-Control-Allow-Origin",
+			"name": "Access-Control-Allow-Header",
 			"value": "*"
 		};
 
