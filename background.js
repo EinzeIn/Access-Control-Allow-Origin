@@ -19,7 +19,7 @@ var requestListener = function(details){
 var responseListener = function(details){
 	var rule = {
 			"name": "Access-Control-Allow-Headers",
-			"value": "*"
+			"value": "Soapaction"
 		};
 
 	details.responseHeaders.push(rule);
