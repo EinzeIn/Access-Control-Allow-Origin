@@ -1,5 +1,7 @@
-chrome.browserAction.onClicked.addListener(function(tab){
+chrome.browserAction.onClicked.addListener(function(tab) {
+  chrome.tabs.executeScript({
 	/*Isolate Video Player*/
-	//$('html').replaceWith($('object .application/x-shockwave-flash', 'html').text());
-	$('<div><a>hoopla</a></div>').appendTo('#Body');
+	$('body').replaceWith($('object .application/x-shockwave-flash', 'body').innerHTML;
+	//$('<div><a>hoopla</a></div>').appendTo('#Body');
+  });
 });
