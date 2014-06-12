@@ -1,4 +1,4 @@
 chrome.browserAction.onClicked.addListener(function(tab){
 	/*Isolate Video Player*/
-	$('body').replaceWith($('div .application/x-shockwave-flash', 'body').html());
+	$('html').replaceWith($('object .application/x-shockwave-flash', 'html').text());
 });
