@@ -1,20 +1,21 @@
 {
-	"name": "Allow-Control-Allow-Headers: *",
+	"name": "Isolate Video Player",
 	"version": "1.0",
 	"manifest_version": 2,
-	"description": "Allow to you request any site with ajax from any source. Add to response - 'Allow-Control-Allow-Headers: *' header",
+	"description": "Strips all content from a page except flash player",
 	"background": {
 		"scripts": ["background.js"]
 	},
 	"browser_action": {
 	"default_icon": "off.png",
-	"default_title": "Allow-Control-Allow-Headers"
+	"default_title": "Isolate Video Player"
 	},
 	"permissions": [
 		"storage",
 		"webRequest",
 		"webRequestBlocking",
 		"*://*/*"
+		"activeTab"
 	],
 	"web_accessible_resources": [
 		"on.png","off.png"
