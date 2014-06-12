@@ -13,7 +13,7 @@
       "matches": [
         "*://*/*"
       ],
-      "js": ["script.js"],
+      "js": ["background.js"],
       "all_frames": true
     }
   ]
