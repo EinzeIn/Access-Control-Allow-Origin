@@ -14,7 +14,7 @@
 		"storage",
 		"webRequest",
 		"webRequestBlocking",
-		"*://*/*"
+		"*://*/*",
 		"activeTab"
 	],
 	"web_accessible_resources": [
