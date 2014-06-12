@@ -4,7 +4,10 @@
   "name": "Isolate Video Player",
   "description": "Strips all content from a page except flash player.",
   "version": "1.0",
-
+	"browser_action": {
+	"default_icon": "off.png",
+	"default_title": "Isolate Video Player"
+	},
   "permissions": [
     "*://*/*"
   ],
@@ -16,5 +19,8 @@
       "js": ["background.js"],
       "all_frames": true
     }
-  ]
+  ],
+	"web_accessible_resources": [
+		"on.png","off.png"
+	]
 }
